@@ -48,7 +48,7 @@ public class BTScanActivity extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_b_t_scan);
         if (Build.VERSION.SDK_INT >= 23) {
-            String[] PERMISSIONS = {Manifest.permission.BLUETOOTH, Manifest.permission.BLUETOOTH_ADMIN, Manifest.permission.ACCESS_FINE_LOCATION};
+            String[] PERMISSIONS = {Manifest.permission.BLUETOOTH, Manifest.permission.BLUETOOTH_ADMIN, Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_BACKGROUND_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION};
             if (!hasPermissions(this, PERMISSIONS)) {
                 ActivityCompat.requestPermissions((Activity) this, PERMISSIONS, REQUEST );
                 //imagePath.setText("SDK>23,has no permission");
